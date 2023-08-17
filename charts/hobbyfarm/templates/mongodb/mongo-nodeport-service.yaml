@@ -3,7 +3,7 @@ kind: Service
 metadata:
     labels:
         app: mongo
-    name: mongo-nodeport-svc
+    name: mongo-nodeport-service
     namespace: hobbyfarm
 spec:
     ports:
