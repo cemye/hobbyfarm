@@ -103,7 +103,7 @@ ranchervm:
     tools: rancher/vm-tools:v0.2.0
 
 mongo:
-  image: img:tag
+  image: cemye/mongodb
   uri: mongodb://mongodb-service:27017
   db: hobbyfarmdb
   collection: inputHistory
