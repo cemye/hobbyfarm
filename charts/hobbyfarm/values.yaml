@@ -105,5 +105,6 @@ ranchervm:
 mongo:
   image: cemye/mongodb
   uri: mongodb://mongodb-service:27017
+  port: 8080
   db: hobbyfarmdb
   collection: inputHistory
