@@ -14,5 +14,3 @@ spec:
     selector:
         app: mongo
     type: NodePort
-status:
-    loadBalancer: {}

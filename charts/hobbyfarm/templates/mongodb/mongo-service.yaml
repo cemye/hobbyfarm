@@ -1,27 +1,15 @@
-﻿apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Service
 metadata:
+  labels:
+    app: mongo
   name: mongo-service
   namespace: hobbyfarm
 spec:
-  replicas: 1
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
   selector:
-    matchLabels:
-      app: mongo-service
-  template:
-    metadata:
-      labels:
-        app: mongo-service
-    spec:
-      containers:
-        - name: mongo-service
-          image: {{ $.Values.mongo.image }}
-          ports:
-            - containerPort: {{ $.Values.mongo.port }}
-          env:
-            - name: MONGO_URI
-              value: {{ $.Values.mongo.uri }}
-            - name: DB_NAME
-              value: {{ $.Values.mongo.db }}
-            - name: COLLECTION_NAME
-              value: {{ $.Values.mongo.collection }}
+    app: mongo
+  type: NodePort
