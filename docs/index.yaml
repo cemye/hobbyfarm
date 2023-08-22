@@ -3,6 +3,25 @@ entries:
   hobbyfarm:
   - apiVersion: v2
     appVersion: 3.0.0
+    created: "2023-08-21T10:09:14.482617631Z"
+    description: Interactive coding platform in a browser
+    digest: 384c00cf9c567d689cf359d239538c63247663384dfada1a397ec122efc6a67c
+    home: https://hobbyfarm.github.io
+    maintainers:
+    - email: eamon@eamonbauman.com
+      name: ebauman
+    - email: jan-gerrit.goebel@brebit.de
+      name: jggoebel
+    - email: bertrand@devpro.fr
+      name: devpro
+    name: hobbyfarm
+    sources:
+    - https://github.com/hobbyfarm
+    urls:
+    - https://github.com/cemye/hobbyfarm/releases/download/hobbyfarm-3.1.5/hobbyfarm-3.1.5.tgz
+    version: 3.1.5
+  - apiVersion: v2
+    appVersion: 3.0.0
     created: "2023-08-18T11:15:42.139790572Z"
     description: Interactive coding platform in a browser
     digest: 5e94f4de8e1b9e487883bc7148920d3b8265f6072569f3a9d1f1c0c2da235ed3
