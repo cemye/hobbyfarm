@@ -7,14 +7,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mongo-service
+      app: mongo-rest
   template:
     metadata:
       labels:
-        app: mongo-service
+        app: mongo-rest
     spec:
       containers:
-        - name: mongo-service
+        - name: mongo-rest
           image: {{ $.Values.mongo.image }}
           ports:
             - containerPort: {{ $.Values.mongo.containerPort }}
