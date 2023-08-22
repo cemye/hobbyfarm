@@ -11,5 +11,5 @@ spec:
       port: 80
       targetPort: 8080
   selector:
-    app: mongo-service
+    app: mongo-rest
   type: NodePort
