@@ -21,6 +21,8 @@ spec:
           name: mongo
           args: ["--dbpath","/data/db"]
           imagePullPolicy: Always
+          ports:
+            - containerPort: 80
           env:
             - name: MONGO_INITDB_ROOT_USERNAME
               valueFrom:
