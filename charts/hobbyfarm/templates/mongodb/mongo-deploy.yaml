@@ -22,7 +22,7 @@ spec:
           args: ["--dbpath","/data/db"]
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 27017
           env:
             - name: MONGO_INITDB_ROOT_USERNAME
               valueFrom:
