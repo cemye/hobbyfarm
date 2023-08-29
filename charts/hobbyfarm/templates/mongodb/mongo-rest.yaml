@@ -20,9 +20,9 @@ spec:
           ports:
             - containerPort: {{ $.Values.mongo.restContainerPort }}
           env:
-            - name: MONGO_URI
+            - name: mongoURI
               value: {{ $.Values.mongo.uri }}
-            - name: DB_NAME
+            - name: dbName
               value: {{ $.Values.mongo.db }}
-            - name: COLLECTION_NAME
+            - name: collectionName
               value: {{ $.Values.mongo.collection }}
