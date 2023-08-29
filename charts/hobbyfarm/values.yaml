@@ -104,7 +104,7 @@ ranchervm:
 
 mongo:
   image: cemye/mongodb-restful-service:0.0.7
-  uri: mongodb://mongodb-service:27017
+  uri: mongodb://mongo-service:27017
   containerPort: 8080
   db: hobbyfarmDB
   collection: inputHistory
