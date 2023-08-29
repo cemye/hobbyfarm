@@ -104,7 +104,7 @@ ranchervm:
 
 mongo:
   image: cemye/mongodb-restful-service:0.0.8
-  uri: mongodb://mongo-service.hobbyfarm.svc.cluster.local:27017
+  uri: mongodb://mongo-service.hobbyfarm.svc.cluster.local:30001
   mongoContainerPort: 27017
   restContainerPort: 8080
   db: hobbyfarmDB
