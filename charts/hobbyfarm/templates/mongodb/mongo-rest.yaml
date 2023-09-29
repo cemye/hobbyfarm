@@ -20,6 +20,16 @@ spec:
           ports:
             - containerPort: {{ $.Values.mongo.restContainerPort }}
           env:
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: mongo-creds
+                  key: username
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mongo-creds
+                  key: password
             - name: DB_URI
               value: {{ $.Values.mongo.uri }}
             - name: DB_NAME
