@@ -26,7 +26,7 @@ Check the [hobbyfarm docs](https://hobbyfarm.github.io/docs/appendix/markdown_sy
 See the [CONTRIBUTING.md](https://github.com/hobbyfarm/hobbyfarm/blob/master/CONTRIBUTING.md) file in the repo.
 
 ## Terraform Modules
-Note: It is not recommende to use Terraform. If you need to use it however you will need to enable it within the values.yml and apply a module after deploying the chart.
+Note: It is not recommended to use Terraform. If you need to use it however you will need to enable it within the values.yml and apply a module after deploying the chart.
 
 <details>
 <summary>Apply module</summary>
@@ -42,14 +42,6 @@ spec:
   git:
     url: {{ module_repo }}
 ```
-  ### ranchervm:
-    module: tf-module
-    module_repo: https://github.com/hobbyfarm/tf-module-rvm
-    image: rancher/vm-ubuntu:16.04.5-server-amd64
-    endpoint: "http://backend.ranchervm-system:9500"
-    access_key: ''
-    secret_key: ''
-
   ### google:
     module: tf-module
     module_repo: https://github.com/boxboat/tf-module-google
