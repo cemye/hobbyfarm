@@ -146,4 +146,6 @@ mongo:
   restContainerPort: 8080
   db: hobbyfarmDB
   collection: sessionData
+  replicas: 3
+  storageSize: 1Gi
 

@@ -1,0 +1,24 @@
+﻿apiVersion: mongodb.com/v1
+kind: MongoDB
+metadata:
+  name: my-mongodb
+  namespace: hobbyfarm
+spec:
+  members: 3
+  type: ReplicaSet
+  version: "4.2.6"
+  security:
+    authentication:
+      modes: [ "SCRAM" ]
+  users:
+    - name: main-user
+      db: admin
+      passwordSecretRef:
+        name: mongo-creds
+      roles:
+        - name: readWrite
+          db: mydb
+      scramCredentialsSecretName: my-mongodb-credentials
+  statefulSet:
+    spec:
+      serviceName: my-mongodb-svc
