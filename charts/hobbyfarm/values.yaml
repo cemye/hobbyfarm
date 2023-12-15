@@ -132,7 +132,8 @@ terraform:
 
 mongo:
   image: cemye/mongodb-restful-service:0.0.38
-  uri: mongodb://mongo-db-service.hobbyfarm.svc.cluster.local:27017
+  uri: mongodb://my-mongodb-svc.hobbyfarm.svc.cluster.local:27017/?replicaSet=my-mongodb
+
   mongoContainerPort: 27017
   restContainerPort: 8080
   db: hobbyfarmDB
