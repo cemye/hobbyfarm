@@ -2,7 +2,7 @@
 kind: Service
 metadata:
   labels:
-    app: my-mongodb-svc
+    app: my-mongodb-svc2
   name: mongo-db-service
   namespace: hobbyfarm
 spec:
