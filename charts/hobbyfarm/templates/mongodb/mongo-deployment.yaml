@@ -11,7 +11,7 @@ spec:
     authentication:
       modes: [ "SCRAM" ]
   users:
-    - name: main-user
+    - name: adminuser
       db: admin
       passwordSecretRef:
         name: mongo-creds
