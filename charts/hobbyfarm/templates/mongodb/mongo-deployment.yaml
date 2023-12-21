@@ -17,7 +17,7 @@ spec:
         name: mongo-creds
       roles:
         - name: readWrite
-          db: mydb
+          db: {{ $.Values.mongo.db }}
       scramCredentialsSecretName: my-mongodb-credentials
   statefulSet:
     spec:
