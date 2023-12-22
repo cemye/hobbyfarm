@@ -4,7 +4,7 @@ metadata:
   name: my-mongodb
   namespace: hobbyfarm
 spec:
-  members: 1
+  members: {{ $.Values.mongo.replicas }}
   type: ReplicaSet
   version: "4.2.6"
   security:
