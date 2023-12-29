@@ -131,7 +131,7 @@ terraform:
     threads: 2
 
 mongo:
-  image: cemye/mongodb-restful-service:0.0.46
+  image: cemye/mongodb-restful-service:0.0.47
   uri: mongodb://my-mongodb-svc.hobbyfarm.svc.cluster.local:27017
 
   mongoContainerPort: 27017
