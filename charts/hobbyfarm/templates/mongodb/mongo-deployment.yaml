@@ -22,3 +22,14 @@ spec:
   statefulSet:
     spec:
       serviceName: my-mongodb-svc
+      template:
+        spec:
+          containers:
+            - name: mongod
+              resources:
+                requests:
+                  cpu: "500m"
+                  memory: "500Mi"
+                limits:
+                  cpu: "1"
+                  memory: "2Gi"
