@@ -10,13 +10,6 @@ spec:
   security:
     authentication:
       modes: [ "SCRAM" ]
-  resources:
-    requests:
-      cpu: "222m"
-      memory: "2Gi"
-    limits:
-      cpu: "133m"
-      memory: "4Gi"
   users:
     - name: adminuser
       db: admin
@@ -34,17 +27,18 @@ spec:
           containers:
             - name: mongod
               resources:
+                requests:
+                  cpu: "100m"
+                  memory: "500Mi"
                 limits:
                   cpu: "300m"
                   memory: "2Gi"
-                requests:
-                  cpu: "100m"
-                  memory: "500Mi"
+
             - name: mongodb-agent
               resources:
-                limits:
-                  cpu: "200m"
-                  memory: "500Mi"
                 requests:
                   cpu: "100m"
                   memory: "400Mi"
+                limits:
+                  cpu: "200m"
+                  memory: "500Mi"
