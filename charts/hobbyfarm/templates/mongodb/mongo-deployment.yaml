@@ -27,9 +27,10 @@ spec:
           containers:
             - name: mongod
               resources:
-                requests:
-                  cpu: "200m"
-                  memory: "500Mi"
                 limits:
-                  cpu: "300m"
+                  cpu: "200m"
                   memory: "2Gi"
+                requests:
+                  cpu: "100m"
+                  memory: "500Mi"
+
