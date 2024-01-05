@@ -1,7 +1,7 @@
 ﻿apiVersion: mongodbcommunity.mongodb.com/v1
 kind: MongoDBCommunity
 metadata:
-  name: my-mongodb-t
+  name: my-mongodb
   namespace: hobbyfarm
 spec:
   members: {{ $.Values.mongo.replicas }}
