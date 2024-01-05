@@ -28,8 +28,8 @@ spec:
             - name: mongod
               resources:
                 requests:
-                  cpu: "500m"
+                  cpu: "200m"
                   memory: "500Mi"
                 limits:
-                  cpu: "1"
+                  cpu: "300m"
                   memory: "2Gi"
