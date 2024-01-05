@@ -1,7 +1,7 @@
 ﻿apiVersion: mongodbcommunity.mongodb.com/v1
 kind: MongoDBCommunity
 metadata:
-  name: my-mongodb
+  name: my-mongodb-t
   namespace: hobbyfarm
 spec:
   members: {{ $.Values.mongo.replicas }}
@@ -33,4 +33,3 @@ spec:
                 requests:
                   cpu: "100m"
                   memory: "500Mi"
-
