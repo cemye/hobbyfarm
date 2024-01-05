@@ -36,8 +36,8 @@ spec:
             - name: mongodb-agent
               resources:
                 limits:
-                  cpu: "200m"
+                  cpu: "300m"
                   memory: "500Mi"
                 requests:
-                  cpu: "300m"
+                  cpu: "200m"
                   memory: "400Mi"
