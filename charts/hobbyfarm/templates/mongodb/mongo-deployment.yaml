@@ -10,6 +10,13 @@ spec:
   security:
     authentication:
       modes: [ "SCRAM" ]
+  resources:
+    requests:
+      cpu: "222m"
+      memory: "2Gi"
+    limits:
+      cpu: "133m"
+      memory: "4Gi"
   users:
     - name: adminuser
       db: admin
